@@ -10,6 +10,7 @@ class TV:
         self._volumen=1
         self._precio=500
         self._control = None
+        TV.numTV +=1
 
     
     def getMarca(self):
@@ -50,7 +51,7 @@ class TV:
     def setNumTV(num):
         TV.numTV=num
 
-    def turnON(self):
+    def turnOn(self):
         self._estado=True
     
     def turnOff(self):
