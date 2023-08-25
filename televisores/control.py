@@ -4,7 +4,7 @@ from televisores import tv
 class Control:
 
     def __init__(self):
-        self._tv
+        self._tv = None
 
     def turnOn(self):
         self._tv.turnOn()
@@ -34,9 +34,6 @@ class Control:
     def enlazar(self,tv1):
         tv1.setControl(self)
         self.setTv(tv1)
-
-
-
 
     
     def getTv(self):
